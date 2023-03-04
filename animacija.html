@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacija</title>
+    <style>
+
+        #main-div {
+            width: 450px;
+            height: 450px;
+            margin: auto;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            background-color: #050210;
+            
+        }
+
+        #circle {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border-radius: 50%;        
+           background: linear-gradient(#fb5dad 0%, #55fb9f 50%, #b97aff 100%);
+           filter: blur(1px);
+           animation: animate 1s linear infinite;
+           
+        }
+        #circle-1 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 25px auto;
+            filter: blur(1px);
+            background-color: #050210 ;
+            
+            
+        }
+      
+      
+ 
+
+@keyframes animate{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div id="main-div">
+        <div id="circle">
+            <div id="circle-1"></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
